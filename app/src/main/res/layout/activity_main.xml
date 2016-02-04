@@ -16,15 +16,17 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
+            android:background="#ddd5c7"
             app:popupTheme="@style/AppTheme.PopupOverlay" >
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Calories Converter"
-                android:fontFamily="sans-serif-light"
-                android:textSize="20dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="CAL"
+                android:textStyle="italic"
+                android:textSize="23dp"
+                android:textColor="#003262"
                 android:layout_gravity="center"
                 android:id="@+id/toolbar_title" />
 

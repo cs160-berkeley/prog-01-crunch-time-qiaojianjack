@@ -6,6 +6,7 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.Editable;
+import android.text.Html;
 import android.text.TextWatcher;
 import android.view.View;
 import android.view.Menu;
@@ -25,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     ArrayAdapter<CharSequence> adapter;
     private static final HashSet<String> REPS = new HashSet<String>(Arrays.asList("Pushup", "Situp", "Squats", "Pullup"));
     private static final HashSet<String> MINS = new HashSet<String>(Arrays.asList("Jumping Jacks", "Jogging",
-            "Leg-lift", "Plank", "Cycling", "Walking", "Swimming", "Stair-climbing"));
+            "Leg-lift", "Plank", "Cycling", "Walking", "Swimming", "Stair-Climbing"));
     private static final HashMap<String, Integer> TABLE;
     static {
         TABLE = new HashMap<String, Integer>();
@@ -50,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+        ((TextView)findViewById(R.id.toolbar_title)).setText(Html.fromHtml("CAL<sup><small>2</small></sup>"));
 
         Spinner selectLeft = (Spinner) findViewById(R.id.selectLeft);
         adapter = ArrayAdapter.createFromResource(this,
