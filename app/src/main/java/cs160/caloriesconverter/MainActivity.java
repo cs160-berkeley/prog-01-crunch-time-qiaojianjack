@@ -83,6 +83,7 @@ public class MainActivity extends AppCompatActivity {
 
         Spinner selectRight = (Spinner) findViewById(R.id.selectRight);
         selectRight.setAdapter(adapter);
+        selectRight.setSelection(12);
         selectRight.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
